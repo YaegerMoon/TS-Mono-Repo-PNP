@@ -19,11 +19,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "ts-mono-repo",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "@mono/react-component",\
+        "reference": "workspace:packages/react-component"\
+      },\
+      {\
+        "name": "@mono/react-web-app",\
+        "reference": "workspace:packages/react-web-app"\
+      },\
+      {\
+        "name": "@mono/theme",\
+        "reference": "workspace:packages/theme"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["@mono/react-component", ["workspace:packages/react-component"]],\
+      ["@mono/react-web-app", ["workspace:packages/react-web-app"]],\
+      ["@mono/theme", ["workspace:packages/theme"]],\
       ["ts-mono-repo", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -39,11 +54,161 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT"\
         }]\
       ]],\
+      ["@mono/react-component", [\
+        ["workspace:packages/react-component", {\
+          "packageLocation": "./packages/react-component/",\
+          "packageDependencies": [\
+            ["@mono/react-component", "workspace:packages/react-component"],\
+            ["@types/react", "npm:18.0.8"],\
+            ["@types/react-dom", "npm:18.0.2"],\
+            ["react", "npm:18.1.0"],\
+            ["react-dom", "virtual:4bf7a1766ea9c7b505e5bb85500f7c5582705130adeefc4fe2ae5b10faaa0243e80f448ee187fdf4ae45ac40a4d6fe65b97cb4fee248153043f90405fb7aae40#npm:18.1.0"],\
+            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@mono/react-web-app", [\
+        ["workspace:packages/react-web-app", {\
+          "packageLocation": "./packages/react-web-app/",\
+          "packageDependencies": [\
+            ["@mono/react-web-app", "workspace:packages/react-web-app"],\
+            ["@types/react", "npm:18.0.8"],\
+            ["@types/react-dom", "npm:18.0.2"],\
+            ["react", "npm:18.1.0"],\
+            ["react-dom", "virtual:4bf7a1766ea9c7b505e5bb85500f7c5582705130adeefc4fe2ae5b10faaa0243e80f448ee187fdf4ae45ac40a4d6fe65b97cb4fee248153043f90405fb7aae40#npm:18.1.0"],\
+            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@mono/theme", [\
+        ["workspace:packages/theme", {\
+          "packageLocation": "./packages/theme/",\
+          "packageDependencies": [\
+            ["@mono/theme", "workspace:packages/theme"],\
+            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["@types/node", [\
         ["npm:17.0.29", {\
           "packageLocation": "./.yarn/cache/@types-node-npm-17.0.29-0de8e6d3d0-bb9d7bce9d.zip/node_modules/@types/node/",\
           "packageDependencies": [\
             ["@types/node", "npm:17.0.29"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/prop-types", [\
+        ["npm:15.7.5", {\
+          "packageLocation": "./.yarn/cache/@types-prop-types-npm-15.7.5-2aa48aa177-5b43b8b154.zip/node_modules/@types/prop-types/",\
+          "packageDependencies": [\
+            ["@types/prop-types", "npm:15.7.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/react", [\
+        ["npm:18.0.8", {\
+          "packageLocation": "./.yarn/cache/@types-react-npm-18.0.8-0373db5974-12d0e6bc39.zip/node_modules/@types/react/",\
+          "packageDependencies": [\
+            ["@types/react", "npm:18.0.8"],\
+            ["@types/prop-types", "npm:15.7.5"],\
+            ["@types/scheduler", "npm:0.16.2"],\
+            ["csstype", "npm:3.0.11"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/react-dom", [\
+        ["npm:18.0.2", {\
+          "packageLocation": "./.yarn/cache/@types-react-dom-npm-18.0.2-9bfae9960a-2b0b138d86.zip/node_modules/@types/react-dom/",\
+          "packageDependencies": [\
+            ["@types/react-dom", "npm:18.0.2"],\
+            ["@types/react", "npm:18.0.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/scheduler", [\
+        ["npm:0.16.2", {\
+          "packageLocation": "./.yarn/cache/@types-scheduler-npm-0.16.2-ba3a7d8c68-b6b4dcfeae.zip/node_modules/@types/scheduler/",\
+          "packageDependencies": [\
+            ["@types/scheduler", "npm:0.16.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["csstype", [\
+        ["npm:3.0.11", {\
+          "packageLocation": "./.yarn/cache/csstype-npm-3.0.11-b49897178d-95e56abfe9.zip/node_modules/csstype/",\
+          "packageDependencies": [\
+            ["csstype", "npm:3.0.11"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["js-tokens", [\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/js-tokens-npm-4.0.0-0ac852e9e2-8a95213a5a.zip/node_modules/js-tokens/",\
+          "packageDependencies": [\
+            ["js-tokens", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["loose-envify", [\
+        ["npm:1.4.0", {\
+          "packageLocation": "./.yarn/cache/loose-envify-npm-1.4.0-6307b72ccf-6517e24e0c.zip/node_modules/loose-envify/",\
+          "packageDependencies": [\
+            ["loose-envify", "npm:1.4.0"],\
+            ["js-tokens", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react", [\
+        ["npm:18.1.0", {\
+          "packageLocation": "./.yarn/cache/react-npm-18.1.0-d66a868dc8-5bb296b561.zip/node_modules/react/",\
+          "packageDependencies": [\
+            ["react", "npm:18.1.0"],\
+            ["loose-envify", "npm:1.4.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-dom", [\
+        ["npm:18.1.0", {\
+          "packageLocation": "./.yarn/cache/react-dom-npm-18.1.0-bd83695a9a-bb0d48eeb0.zip/node_modules/react-dom/",\
+          "packageDependencies": [\
+            ["react-dom", "npm:18.1.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4bf7a1766ea9c7b505e5bb85500f7c5582705130adeefc4fe2ae5b10faaa0243e80f448ee187fdf4ae45ac40a4d6fe65b97cb4fee248153043f90405fb7aae40#npm:18.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-b7c61aeab9/0/cache/react-dom-npm-18.1.0-bd83695a9a-bb0d48eeb0.zip/node_modules/react-dom/",\
+          "packageDependencies": [\
+            ["react-dom", "virtual:4bf7a1766ea9c7b505e5bb85500f7c5582705130adeefc4fe2ae5b10faaa0243e80f448ee187fdf4ae45ac40a4d6fe65b97cb4fee248153043f90405fb7aae40#npm:18.1.0"],\
+            ["@types/react", "npm:18.0.8"],\
+            ["loose-envify", "npm:1.4.0"],\
+            ["react", "npm:18.1.0"],\
+            ["scheduler", "npm:0.22.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["scheduler", [\
+        ["npm:0.22.0", {\
+          "packageLocation": "./.yarn/cache/scheduler-npm-0.22.0-63c9337981-a8ef5cab76.zip/node_modules/scheduler/",\
+          "packageDependencies": [\
+            ["scheduler", "npm:0.22.0"],\
+            ["loose-envify", "npm:1.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
