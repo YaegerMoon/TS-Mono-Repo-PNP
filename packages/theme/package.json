@@ -1,6 +1,6 @@
 {
   "name": "@mono/theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "yarn@3.2.0",
   "dependencies": {
     "typescript": "^4.6.3"
