@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": "./packages/react-component"
+        },
+        {
+            "path": "./packages/react-web-app",            
+        },
+        {
+            "path": "./packages/theme"
+        }
+    ]
+}

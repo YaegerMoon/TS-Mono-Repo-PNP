@@ -1,8 +1,10 @@
 {
   "name": "@mono/react-component",
   "version": "0.0.1",
+  "main": "./src/index.ts",
   "packageManager": "yarn@3.2.0",
   "dependencies": {
+    "@mono/theme": "workspace:*",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "typescript": "^4.6.3"

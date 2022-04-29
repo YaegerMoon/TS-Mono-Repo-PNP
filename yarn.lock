@@ -835,10 +835,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mono/react-component@workspace:packages/react-component":
+"@mono/react-component@workspace:*, @mono/react-component@workspace:packages/react-component":
   version: 0.0.0-use.local
   resolution: "@mono/react-component@workspace:packages/react-component"
   dependencies:
+    "@mono/theme": "workspace:*"
     "@types/react": ^18
     "@types/react-dom": ^18
     react: ^18.1.0
@@ -851,6 +852,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mono/react-web-app@workspace:packages/react-web-app"
   dependencies:
+    "@mono/react-component": "workspace:*"
     "@types/react": ^18
     "@types/react-dom": ^18
     react: ^18.1.0
@@ -859,7 +861,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@mono/theme@workspace:packages/theme":
+"@mono/theme@workspace:*, @mono/theme@workspace:packages/theme":
   version: 0.0.0-use.local
   resolution: "@mono/theme@workspace:packages/theme"
   dependencies:

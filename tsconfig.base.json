@@ -14,8 +14,13 @@
       "isolatedModules": true
     },
     "references": [
-
+      {
+        "path": "packages/theme"
+      },
+      {
+        "path": "packages/react-web-app"
+      }
     ],
-    "exclude": ["packages/**/dist/**"],
+    "exclude": [],
     "include": []
   }

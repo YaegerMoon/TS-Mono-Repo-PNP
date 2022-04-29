@@ -959,6 +959,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/react-component/",\
           "packageDependencies": [\
             ["@mono/react-component", "workspace:packages/react-component"],\
+            ["@mono/theme", "workspace:packages/theme"],\
             ["@types/react", "npm:18.0.8"],\
             ["@types/react-dom", "npm:18.0.2"],\
             ["react", "npm:18.1.0"],\
@@ -973,6 +974,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/react-web-app/",\
           "packageDependencies": [\
             ["@mono/react-web-app", "workspace:packages/react-web-app"],\
+            ["@mono/react-component", "workspace:packages/react-component"],\
             ["@types/react", "npm:18.0.8"],\
             ["@types/react-dom", "npm:18.0.2"],\
             ["react", "npm:18.1.0"],\
