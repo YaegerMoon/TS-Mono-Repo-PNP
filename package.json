@@ -29,7 +29,7 @@
     "prettier": "^2.6.2"
   },
   "lint-staged": {
-    "*.{ts,js,tsx,jsx}": "eslint --cache --fix"
+    "*.{ts,js,tsx,jsx}": "eslint ./packages --fix"
   },
   "scripts": {
     "postinstall": "husky install"
