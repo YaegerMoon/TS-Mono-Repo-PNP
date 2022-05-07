@@ -4,6 +4,7 @@
     "**/.pnp.*": true
   },
   "cSpell.words": [
+    "commitlint",
     "typesciprt"
   ],
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
